@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./img/list.png" type="image/x-icon">
+    <!--  Font Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <title>To Do List</title>
+    
+  
+   
+</head>
+
+<body>
+
+    <div class="todo_container">
+        <header>
+            <h1>To Do List</h1>
+        </header>
+        <form id="todo-form">
+            <p>Add your task</p>
+            <div class="form_control">
+
+                <input type="text" id="todo-input" placeholder="what will you do?" />
+                <button><i class="ri-add-line"></i></button>
+            </div>
+        </form>
+        <form id="edit-form" class="hide">
+            <p>Edit your task</p>
+            <div class="form_control">
+                <input type="text" id="edit-input">
+                <button><i class="ri-edit-2-fill"></i></button>
+            </div>
+            <button id="cancel-edit-btn"> Cancel</button>
+        </form>
+        <div id="toolbar">
+            <div id="search">
+                <h4>Search for</h4>
+                <form>
+                    <input type="text" id="search-input" placeholder="Search">
+                    <button id="erase-button">
+                        <i class="ri-delete-back-2-fill"></i>
+                    </button>
+                </form>
+            </div>
+            <div id="filter">
+                <h4>Filter:</h4>
+                <select id="filter-select">
+                    <option value="all">All</option>
+                    <option value="done">Done</option>
+                    <option value="todo">To do</option>
+                </select>
+            </div>
+        </div>
+        <div id="todo-list">
+            <div class="todo done">
+                <h3>I'm doing something</h3>
+                <button class="finish-todo">
+                    <i class="ri-check-line"></i>
+                </button>
+                <button class="edit-todo">
+                    <i class="ri-edit-2-fill"></i>
+                </button>
+                <button class="remove-todo">
+                    <i class="ri-delete-bin-line"></i>
+                </button>
+            </div>
+
+            <div class="todo">
+                <h3>Going to the dentist</h3>
+                <button class="finish-todo">
+                    <i class="ri-check-line"></i>
+                </button>
+                <button class="edit-todo">
+                    <i class="ri-edit-2-fill"></i>
+                </button>
+                <button class="remove-todo">
+                    <i class="ri-delete-bin-line"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="./js/scripts.js" defer></script>
+</body>
+
+</html>
